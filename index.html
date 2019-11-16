@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>JS Axios App</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>JS Axios App</h1>
+      <div class="jumbotron">
+        <h1>Axios App</h1>
+      </div>
+      <div class="panel panel-primary">
+        <div class="panel-heading">GET Request</div>
+        <div class="panel-body">
+          <button class="btn btn-primary" onclick="performGetRequest1()">Get Todos</button>
+          <button class="btn btn-warning" onclick="clearOutput()">Clear</button>
+          <div class="panel-body" id="getResult1"></div>
+        </div>
+      </div>
+      <div class="panel panel-primary">
+        <div class="panel-heading">GET Request with Paramaters</div>
+        <div class="panel-body">
+          <input type="text" class="form-control" id="todoId" placeholder="Todo ID ..."/><br/>
+          <button class="btn btn-primary" onclick="performGetRequest2()">Get Todos</button>
+          <button class="btn btn-warning" onclick="clearOutput()">Clear</button>
+          <div class="panel-body" id="getResult2"></div>
+        </div>
+      </div>
+       <div class="panel panel-primary">
+        <div class="panel-heading">POST Request</div>
+        <div class="panel-body">
+          <form class="form-inline" id="todoInputForm">
+            <div class="form-group">
+              <input type="text" class="form-control" id="todoTitle" placeholder="Todo Title ...">
+            </div>
+            <button type="submit" class="btn btn-primary">Send</button>
+          </form><br/>
+          <button class="btn btn-warning" onclick="clearOutput()">Clear</button>
+          <div class="panel-body" id="postResult"></div>
+        </div>
+      </div>
+    </div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
